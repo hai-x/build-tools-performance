@@ -1,6 +1,16 @@
 packages:
   - cases/**
 
+allowBuilds:
+  '@parcel/watcher': false
+  '@swc/core': false
+  core-js: false
+  core-js-pure: false
+  esbuild: true
+  lmdb: false
+  msgpackr-extract: false
+  puppeteer: true
+
 onlyBuiltDependencies:
   - puppeteer
   - rolldown
