@@ -206,26 +206,6 @@ Build metrics:
 
 ---
 
-### rome
-
-A complex TypeScript Node.js project that includes multiple packages from the [rome](https://github.com/rome/tools) toolchain.
-
-```bash
-CASE=rome pnpm benchmark
-```
-
-Build metrics:
-
-| Name                 | Build (no cache) | Build (with cache) | Memory (RSS) | Output size | Gzipped size |
-| -------------------- | ---------------- | ------------------ | ------------ | ----------- | ------------ |
-| Rspack CLI 2.0.0     | 1223ms🥉         | 324ms🥈            | 296MB🥉      | 1704.6kB    | 358.1kB      |
-| Rsbuild 2.0.0        | 1314ms           | 488ms              | 245MB🥈      | 1008.1kB🥇  | 271.0kB🥇    |
-| Rolldown 1.0.0-rc.16 | 431ms🥈          | 411ms🥉            | 223MB🥇      | 1012.2kB🥈  | 271.8kB🥈    |
-| webpack 5.106.2      | 4655ms           | 1358ms             | 624MB        | 1044.2kB    | 275.7kB🥉    |
-| esbuild 0.28.0       | 303ms🥇          | 279ms🥇            | N/A          | 1025.2kB🥉  | 276.7kB      |
-
----
-
 ## Run locally
 
 Run the `benchmark.ts` script to get the results (requires Node.js >= 22):

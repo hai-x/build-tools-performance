@@ -62,12 +62,3 @@ export const createBrowserUtooConfig = ({
     ...(react ? { react: reactOptions } : {}),
     ...config,
   });
-
-/**
- * @param {Record<string, any>} config
- */
-export const createNodeUtooConfig = (config) =>
-  createUtooConfig({
-    target: 'node',
-    ...config,
-  });
