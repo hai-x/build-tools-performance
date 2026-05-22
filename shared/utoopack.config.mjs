@@ -18,6 +18,7 @@ export const createUtooConfig = (config) => {
     mode: isProd ? 'production' : 'development',
     sourceMaps: !isProd,
     persistentCaching: true,
+    stats: false,
     ...rest,
     output: {
       path: './dist',

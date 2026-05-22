@@ -7,7 +7,7 @@
     "build:rolldown": "cross-env NODE_ENV=production rolldown -c ./rolldown.config.mjs",
     "build:rsbuild": "rsbuild build",
     "build:rspack": "rspack build",
-    "build:utoo": "cross-env NODE_ENV=production up build && node -e \"require('node:fs').rmSync('dist/stats.json',{force:true})\"",
+    "build:utoo": "cross-env NODE_ENV=production up build",
     "build:vite": "vite build",
     "build:webpack": "cross-env NODE_ENV=production webpack build --mode production",
     "start:farm": "farm start",

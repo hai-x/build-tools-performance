@@ -28,7 +28,11 @@ export async function getFileSizes(targetDir: string) {
   let gzippedSize = 0;
 
   files = files.filter((file) => {
-    return !(file.endsWith('.map') || file.endsWith('.LICENSE.txt'));
+    return !(
+      file.endsWith('.map') ||
+      file.endsWith('.LICENSE.txt') ||
+      file.endsWith('.json')
+    );
   });
 
   await Promise.all(
