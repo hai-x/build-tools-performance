@@ -154,6 +154,7 @@ class BuildTool {
         fse.removeSync(path.join(dir, './node_modules/.cache'));
         fse.removeSync(path.join(dir, './node_modules/.vite'));
         fse.removeSync(path.join(dir, './node_modules/.farm'));
+        fse.removeSync(path.join(dir, './.turbopack'));
       });
     } catch {
       // ignore cache cleanup failures so benchmarks can continue
@@ -448,6 +449,18 @@ parseToolNames().forEach((name) => {
           startedRegex: /Ready in (.+)(s|ms)/,
           buildScript: 'build:farm',
           binFilePath: '@farmfe/cli/bin/farm.mjs',
+        }),
+      );
+      break;
+    case 'utoo':
+      buildTools.push(
+        new BuildTool({
+          name: 'Utoo ' + require('@utoo/pack-cli/package.json').version,
+          port: 3000,
+          startScript: 'start:utoo',
+          startedRegex: /Local:\s+http:\/\/localhost:(\d+)/,
+          buildScript: 'build:utoo',
+          binFilePath: '@utoo/pack-cli/bin/run.js',
         }),
       );
       break;

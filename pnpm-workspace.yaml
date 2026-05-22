@@ -1,6 +1,8 @@
 packages:
   - cases/**
 
+autoInstallPeers: false
+
 allowBuilds:
   '@parcel/watcher': false
   '@swc/core': false

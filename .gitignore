@@ -6,4 +6,5 @@ dist-*
 .DS_Store
 *.cpuprofile
 .parcel-cache
+.turbopack
 tsconfig.tsbuildinfo
