@@ -2,6 +2,5 @@
 import { createBrowserUtooConfig } from '../../shared/utoopack.config.mjs';
 
 export default createBrowserUtooConfig({
-  entry: './src/index.jsx',
-  react: true,
+  entry: './src/index.js',
 });

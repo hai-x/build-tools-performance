@@ -8,6 +8,7 @@
     "build:rspack": "rspack build",
     "build:rsbuild": "rsbuild build",
     "build:webpack": "cross-env NODE_ENV=production webpack build",
+    "build:utoo": "cross-env NODE_ENV=production up build && node -e \"require('node:fs').rmSync('dist/stats.json',{force:true})\"",
     "build:farm": "farm build",
     "build:vite": "vite build",
     "build:esbuild": "cross-env NODE_ENV=production node esbuild.mjs"
@@ -21,6 +22,7 @@
     "@fluentui/react": "^8.125.6",
     "@headlessui/react": "^2.2.10",
     "@mantine/core": "^9.2.1",
+    "@mantine/hooks": "^9.2.1",
     "@mui/material": "^9.0.1",
     "@radix-ui/themes": "^3.3.0",
     "antd": "^6.4.3",

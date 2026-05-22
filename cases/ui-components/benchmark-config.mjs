@@ -11,6 +11,7 @@ export const config = {
     'esbuild',
     'farm',
     'parcel',
+    'utoo',
   ],
   dev: false,
 };

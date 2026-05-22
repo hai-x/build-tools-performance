@@ -8,6 +8,7 @@
     "build:rspack": "rspack build",
     "build:rsbuild": "rsbuild build",
     "build:webpack": "cross-env NODE_ENV=production webpack build",
+    "build:utoo": "cross-env NODE_ENV=production up build && node -e \"require('node:fs').rmSync('dist/stats.json',{force:true})\"",
     "build:farm": "farm build",
     "build:vite": "vite build",
     "build:esbuild": "cross-env NODE_ENV=production node esbuild.mjs"
