@@ -9,13 +9,7 @@ export const config = {
     'utoo',
   ],
   // Farm, Parcel and Utoo are not enabled because the CI will fail
-  defaultTools: [
-    'rspack',
-    'rsbuild',
-    'vite',
-    'webpack',
-    'utoo',
-  ],
+  defaultTools: ['rspack', 'rsbuild', 'vite', 'webpack'],
   rootFile: 'f0.jsx',
   leafFile: 'd0/d0/d0/f0.jsx',
 };
