@@ -8,7 +8,7 @@ export const config = {
     'parcel',
     'utoo',
   ],
-  // Farm and Parcel are not enabled because the CI will fail
+  // Farm, Parcel and Utoo are not enabled because the CI will fail
   defaultTools: [
     'rspack',
     'rsbuild',
