@@ -16,3 +16,7 @@ allowBuilds:
 onlyBuiltDependencies:
   - puppeteer
   - rolldown
+
+minimumReleaseAgeExclude:
+  - '@rspack/*'
+  - '@rsbuild/*'
