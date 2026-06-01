@@ -19,6 +19,9 @@ jobs:
   benchmark:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 60
+    env:
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
+      PUPPETEER_EXECUTABLE_PATH: '/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing'
     strategy:
       fail-fast: false
       matrix:
@@ -46,7 +49,7 @@ jobs:
           npm i cross-env -g
 
       - name: Install Dependencies
-        run: pnpm install && npx puppeteer browsers install chrome
+        run: pnpm install
 
       - name: Run Benchmark
         run: cross-env CASE=${{ matrix.case }} pnpm benchmark
