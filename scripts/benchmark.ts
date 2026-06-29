@@ -360,7 +360,7 @@ parseToolNames().forEach((name) => {
           name: 'Rsbuild ' + require('@rsbuild/core/package.json').version,
           port: 3000,
           startScript: 'start:rsbuild',
-          startedRegex: /in (.+) (s|ms)/,
+          startedRegex: /in (.+)(s|ms)/,
           buildScript: 'build:rsbuild',
           binFilePath: '@rsbuild/core/bin/rsbuild.js',
         }),
