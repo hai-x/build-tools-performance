@@ -21,3 +21,4 @@ minimumReleaseAgeExclude:
   - '@rspack/*'
   - '@rsbuild/*'
   - '@utoo/*'
+  - 'webpack'
